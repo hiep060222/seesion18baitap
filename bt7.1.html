@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let products = [{ id: 1, name: "Milk", count: 100 }, { id: 2, name: "Yakult", count: 100 }, { id: 3, name: "Butter", count: 100, }];
+        let newProduct = { id: 4, name: "glue", count: 50 };
+        products.push(newProduct);
+        products = products.filter(product => product.id !== 2);
+        let foundProduct = products.find(product => product.id == 3);
+        if (foundProduct) {
+            foundProduct.count = 0;
+        }
+        let keyword = "Butter";
+        let filteredProducts = products.filter(product => product.name.includes(keyword));
+        if (filteredProducts) {
+            console.log("co");
+        } else {
+            console.log("ko co");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Dog {
+            constructor(name, speed) {
+                this.name = name;
+                this.speed = speed;
+            }
+            can() {
+                console.log("gau gau");
+            }
+            batMeo(meo) {
+                if (this.speed > meo.speed) {
+                    console.log(this.name + "bat duoc meo");
+                } else {
+                    console.log(this.name + "khong bat duoc meo");
+                }
+            }
+        }
+        class Cat {
+            constructor(name, speed) {
+                this.name = name;
+                this.speed = speed;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
