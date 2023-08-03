@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Student {
+            constructor(id, name, gender, age, mark) {
+                this.id = id;
+                this.name = name;
+                this.gender = gender;
+                this.age = age;
+                this.mark = mark;
+            }
+        }
+        let newStudent = new Student(1, "Nguyễn Văn a", "Nam", 20, 8);
+        let Students = [];
+        Students.push(newStudent);
+
+        console.log("ID:", Students[0].id);
+        console.log("Tên:", Students[0].name);
+        console.log("Giới tính:", Students[0].gender);
+        console.log("Tuổi:", Students[0].age);
+        console.log("Điểm:", Students[0].mark);
+    </script>
+</body>
+
+</html>
